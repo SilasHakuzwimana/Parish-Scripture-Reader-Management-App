@@ -5,7 +5,7 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
     role ENUM('admin', 'coordinator', 'reader') NOT NULL,
-    phone VARCHAR(20),
+    phone VARCHAR(15),
     photo_path VARCHAR(255),
     is_active BOOLEAN DEFAULT TRUE,
 
@@ -20,16 +20,13 @@ CREATE TABLE users (
 reset_expires DATETIME NULL;
 ```
 
-
 ```
 reset_expires DATETIME NULL;
 ```
 
-
 ```
 reset_expires DATETIME NULL;
 ```
-
 
 -- Mass schedule table
 CREATE TABLE mass_schedules (
