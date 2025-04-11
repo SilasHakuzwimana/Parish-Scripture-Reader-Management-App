@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "FPDF",
+        "pdfgenerator",
+        "setasign"
+    ],
+    [
+        "intelephense.environment.includePaths": ["vendor"],
+        "intelephense.files.maxSize": 5000000,
+        "intelephense.telemetry.enabled": false
+    ]
+}
