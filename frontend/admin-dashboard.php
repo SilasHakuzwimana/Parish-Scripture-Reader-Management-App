@@ -1,6 +1,6 @@
 <?php
-require_once 'auth.php';
-require_once 'db.php';
+require_once '../backend/auth.php';
+require_once '../backend/db.php';
 
 $auth->requireRole('admin');
 
@@ -335,6 +335,9 @@ $readers = $userManager->getAllReaders();
                 </form>
             </div>
         </div>
+        <footer class="footer text-center">
+            <p>&copy; 2025 - <?php echo date('Y') ?> S<sup>t</sup>Basil. All right resevered!</p>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

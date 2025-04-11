@@ -1,1 +1,4 @@
 /vendor/
+*.htaccess
+*.db.php
+*.env

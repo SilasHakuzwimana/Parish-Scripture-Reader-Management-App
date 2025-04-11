@@ -1,6 +1,6 @@
 <?php
-require_once 'auth.php';
-require_once 'db.php';
+require_once '../backend/auth.php';
+require_once '../backend/db.php';
 
 $auth->requireRole('reader');
 
@@ -155,7 +155,7 @@ $availability = $userManager->getUserAvailability($userId);
 
     <footer class="bg-light py-3 mt-4">
         <div class="container text-center">
-            <p class="text-muted mb-0">Parish Reader System &copy; <?= date('Y') ?></p>
+            <p class="text-muted mb-0">&copy;2025 - <?= date('Y') ?>S<sup>t</sup>Basil. All right reserved!</p>
         </div>
     </footer>
 

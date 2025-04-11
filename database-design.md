@@ -8,9 +8,28 @@ CREATE TABLE users (
     phone VARCHAR(20),
     photo_path VARCHAR(255),
     is_active BOOLEAN DEFAULT TRUE,
+
+    reset_token VARCHAR(64) NULL,
+
+    reset_expires DATETIME NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+```
+reset_expires DATETIME NULL;
+```
+
+
+```
+reset_expires DATETIME NULL;
+```
+
+
+```
+reset_expires DATETIME NULL;
+```
+
 
 -- Mass schedule table
 CREATE TABLE mass_schedules (
